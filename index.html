@@ -9,60 +9,77 @@
   <body>
     <div class="container">
       <div class="nav">
-        <a class="nav-logo">logo  </a>
-        <a class="nav-contact"> contact us</a> </div>
+        <a class="nav-logo">logo </a>
+        <a class="nav-contact"> contact us</a>
+      </div>
       <div class="main-container">
         <h1><u>Select your trade</u></h1>
-        <button class="dairy">Dairy</button>
-        <button class="poultry">Poultry</button>
-        <button class="sheep">Sheep</button>
-        <button class="exotic">Alternative/Exotic</button>
-        <button class="pets">Pets</button>
+        <button  class="data-button" class="dairy" data-target="dairy">Dairy</button>
+        <button class="data-button"class="poultry" data-target="poultry">Poultry</button>
+        <button class="data-button"class="sheep" data-target="sheep">Sheep</button>
+        <button class="data-button"class="exotic" data-target="exotic">Alternative/Exotic</button>
+        <button class="data-button"class="pets" data-target="pets">Pets</button>
       </div>
     </div>
+    <div id="dairy" class="hidden" class="dairy-container">
+      <button >Shed design</button>
+      <button>Feeding</button>
+      <button>Breeding</button>
+      <button >Economic Analysis</button>
+      <button >Go Organic</button>
+    </div>
+    <div id="overlay">
+      <div class="overlay-content">
+        <span id="close-overlay">&times;</span>
+        <p id="overlay-text"></p>
+      </div>
+    </div>
+
     <footer>
-        <div class="footer-container">
-          <div class="footer-section">
-            <h3>About Us</h3>
-            <p>We provide modern solutions for managing farms efficiently and sustainably. Empowering farmers to grow smarter.</p>
-          </div>
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#blog">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contact Us</h3>
-            <!-- <p>Email: ibrahimwani095@gmail.com</p> -->
-            <p class="contact">
-                <!-- <i class="fa-regular fa-envelope footer-item_icons"></i> -->
-                Email:<a href="mailto:ibrahimwani095@gmail.com">
-                  ibrahimwani095@gmail.com
-                </a>
-              </p>
-            <p>Phone: 1954796000</p>
-            <p>Address: old Arto sopore</p>
-            <!-- <h3>Contact Us</h3> -->
-            
-          </div>
-          <div class="footer-section">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We provide modern solutions for managing farms efficiently and
+            sustainably. Empowering farmers to grow smarter.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <!-- <p>Email: ibrahimwani095@gmail.com</p> -->
+          <p class="contact">
+            <!-- <i class="fa-regular fa-envelope footer-item_icons"></i> -->
+            Email:<a href="mailto:ibrahimwani095@gmail.com"> ibrahimwani </a>
+          </p>
+          <p>Phone: 1954796000</p>
+          <p>Address: old Arto sopore</p>
+          <!-- <h3>Contact Us</h3> -->
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 FarmManage. All rights reserved.</p>
-        </div>
-      </footer>
-      
-    </body>
-    </html>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FarmManage. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="INDEX.JS"></script>
+  </body>
+
+</html>
