@@ -71,6 +71,7 @@ button.pets {
   margin-left: 10px;
 }
 
+
 #overlay {
   position: absolute;
   top: 0;
@@ -109,6 +110,11 @@ button.pets {
   font-weight: bold;
   color: black;
   cursor: pointer;
+}
+#overlay-text p {
+  color: blue;
+  font-size: large;
+  font-weight: 400;
 }
 
 .hidden {
