@@ -83,7 +83,6 @@ button.pets {
   align-items: center;
   z-index: 1000;
   display: none; /* Initially hidden*/
-  
 }
 .overlay-content {
   background-image: url(banner1.jpg) no-repeat center/cover;
@@ -112,7 +111,6 @@ button.pets {
   cursor: pointer;
 }
 
-
 .hidden {
   display: none;
 }
@@ -121,10 +119,10 @@ button.pets {
   margin: 20px auto;
   padding: 15px;
   width: 90%; /* Adjust for smaller screens */
-  /* max-width: 00px; /* Limit width for larger screens */
-  /* text-align: center;
+/* max-width: 00px; /* Limit width for larger screens */
+/* text-align: center;
   margin-top: 100px;
-}  */ 
+}  */
 
 footer {
   background-color: cadetblue;
@@ -196,7 +194,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  
+  button {
+    width: fit-content;
+  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -223,6 +224,9 @@ footer {
   }
 }
 @media (max-width: 480px) {
+  button {
+    width: fit-content;
+  }
   .overlay-content {
     padding: 10px;
     height: 76%;
@@ -234,5 +238,9 @@ footer {
     top: 5px;
     right: 10px;
     font-size: 18px; /* Further reduce size */
+  }
+  .main-container {
+    width: fit-content;
+    height: fit-content;
   }
 }
