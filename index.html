@@ -14,66 +14,114 @@
       </div>
       <div class="main-container">
         <h1><u>Select your trade</u></h1>
-        <button class="data-button" class="dairy" data-target="dairy">
-          Dairy
-        </button>
-        <button class="data-button" class="poultry" data-target="poultry">
-          Poultry
-        </button>
-        <button class="data-button" class="sheep" data-target="sheep">
-          Sheep
-        </button>
-        <button class="data-button" class="exotic" data-target="exotic">
+        <button class="data-button" data-target="dairy">Dairy</button>
+        <button class="data-button" data-target="poultry">Poultry</button>
+        <button class="data-button" data-target="sheep">Sheep</button>
+        <button class="data-button" data-target="exotic">
           Alternative/Exotic
         </button>
-        <button class="data-button" class="pets" data-target="pets">
-          Pets
-        </button>
+        <button class="data-button" data-target="pets">Pets</button>
       </div>
     </div>
-    <div id="dairy" class="hidden">
-      <button>Shed design</button>
-      <button>Feeding</button>
-      <button>Breeding</button>
-      <button>Economic Analysis</button>
-      <button>Go Organic</button>
-      <p>
-        Didn't find what your looking for?
-        <br />
-        Tell us through Mail
-      </p>
+    <div id="dairy" class="hidden overlay-content">
+      <button class="top-center">DAIRY</button>
     </div>
+
     <div id="poultry" class="hidden">
-      <button>Shed design</button>
-      <button>Feeding</button>
-      <button>Breeding</button>
-      <button>Economic Analysis</button>
-      <button>Go Organic</button>
-      <p>
-        Didn't find what your looking for?
-        <br />
-        Tell us through Mail
-      </p>
+      <button class="top-center">POULTRY</button>
     </div>
     <div id="sheep" class="hidden">
-      <button>Shed design</button>
-      <button>Feeding</button>
-      <button>Breeding</button>
-      <button>Economic Analysis</button>
-      <button>Go Organic</button>
-      <p>
-        Didn't find what your looking for?
-        <br />
-        Tell us through Mail
-      </p>
+      <button class="top-center">SHEEP</button>
     </div>
-    <div id="overlay">
+    <div id="overlay" class="hidden">
       <div class="overlay-content">
-        <span id="close-overlay">&times;</span>
+        <span id="close-overlay" class="close-btn">&times;</span>
         <p id="overlay-text"></p>
+
+        <button class="data-button-2nd" data-target="shed" class="shed">
+          Shed design
+        </button>
+        <button class="data-button-2nd" data-target="feed" class="feed">
+          Feeding
+        </button>
+        <button class="data-button-2nd" data-target="health" class="health">
+          Health
+        </button>
+        <button class="data-button-2nd" data-target="breed" class="breed">
+          Breeding
+        </button>
+        <button class="data-button-2nd" data-target="eco" class="eco">
+          Economic Analysis
+        </button>
+        <button class="data-button-2nd" data-target="org" class="org">
+          Go Organic
+        </button>
       </div>
     </div>
 
+    <div id="overlay-2nd" class="hidden">
+      <div class="overlay-content-2nd">
+        <span id="close-overlay-2nd" class="close-btn">&times;</span>
+        <p id="overlay-text-2nd"></p>
+      </div>
+    </div>
+
+    <div id="shed" class="hidden">
+      <form class="form">
+        <div class="input-box">
+          <input type="number" placeholder="Number of Animals" required />
+          <br /><br />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Total Land Area Available" required />
+          <br /><br />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Length of Plot/land" required />
+          <br /><br />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Breadth of Plot/land" required />
+          <br /><br />
+        </div>
+        <div class="select-box">
+          <label>System of Rearing:</label>
+          <select required>
+            <option>select an option</option>
+            <option value="t-t">Tail to Tail</option>
+            <option value="h-h">Head to Head</option></select
+          ><br /><br />
+        </div>
+        <div class="select-box">
+          <label>whether you intend to rear bulls:</label>
+          <select required>
+            <option>select an option</option>
+            <option value="Y">YES</option>
+            <option value="N">NO</option></select
+          ><br /><br />
+        </div>
+        <div class="select-box">
+          <label>When do you intend to sell hiefers</label>
+          <select required>
+            <option>select an option</option>
+
+            <option value="Y">4-6 month old</option>
+            <option value="N">6-12 month old</option>
+            <option value="N">12 month old</option>
+            <option value="N">Advanced pregnancy</option>
+            <option value="N">calf at foot</option></select
+          ><br /><br />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="feed" class="hidden">
+      <p>Feeding guidelines and information.</p>
+    </div>
+    <div id="health" class="hidden">
+      <p>Health management and resources.</p>
+    </div>
     <footer>
       <div class="footer-container">
         <div class="footer-section">

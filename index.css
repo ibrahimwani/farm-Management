@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 body {
@@ -71,45 +71,55 @@ button.pets {
   margin-left: 10px;
 }
 
-
-#overlay {
-  position: absolute;
+#overlay,
+#overlay-2nd {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 70%;
-  /* background: rgba(0, 0, 0, 0.8); */
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  /* background: rgba(0, 0, 0, 0.8); */
   z-index: 1000;
-  display: none; /* Initially hidden*/
 }
 .overlay-content {
   background-image: url(banner1.jpg) no-repeat center/cover;
   backdrop-filter: blur(50px);
   /* padding: 30px; */
-  border-radius: 10px;
-  height: 250px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  position: relative;
+  /* border-radius: 10px; */
   border: 2px solid cadetblue;
-  /* margin: 20px auto; */
-  margin-top: 125px;
-  padding: 25px;
+  margin: 20px auto;
+  padding: 15px;
   width: 90%; /* Adjust for smaller screens */
   max-width: 400px; /* Limit width for larger screens */
   text-align: center;
   margin-top: 100px;
 }
-#close-overlay {
+.overlay-content-2nd {
+  background-image: url(banner1.jpg) no-repeat center/cover;
+  backdrop-filter: blur(50px);
+  /* padding: 30px; */
+  /* border-radius: 10px; */
+  border: 2px solid cadetblue;
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%; /* Adjust for smaller screens */
+  max-width: 400px; /* Limit width for larger screens */
+  height: 260px;
+  text-align: center;
+  margin-top: 100px;
+  overflow: scroll; /* Hides the scrollbar */
+  overflow-x: hidden;
+}
+
+.close-btn {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
+  top: 5px;
+  right: 3px;
   cursor: pointer;
+  font-size: 25px;
 }
 #overlay-text p {
   color: blue;
@@ -120,6 +130,45 @@ button.pets {
 .hidden {
   display: none;
 }
+
+.health {
+  grid-area: health;
+  height: 150px; /* Adjust height if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.top-center {
+  grid-area: top-center;
+  /* color: yellow; */
+}
+.shed {
+  grid-area: shed;
+}
+
+.feed {
+  grid-area: feed;
+}
+
+.breed {
+  grid-area: breed;
+}
+
+.eco {
+  grid-area: eco;
+}
+
+.org {
+  grid-area: org;
+}
+
 /* .dairy-container {
   border: 2px solid cadetblue;
   margin: 20px auto;
@@ -129,6 +178,64 @@ button.pets {
 /* text-align: center;
   margin-top: 100px;
 }  */
+
+.hidden {
+  display: none;
+}
+.form {
+  /* margin-top: 30px; */
+  color: white
+}
+
+.form .input-box {
+  width: 100%;
+  /* margin-top: 20px; */
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: black;
+  background-color: transparent;
+  /* margin-top: 8px; */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  /* column-gap: 15px; */
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: brown;
+  background-color:transparent ;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color:black;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  /* transition: all 0.2s ease; */
+  background: url(banner1.jpg);
+  /* background-color: transparent; */
+}
+/* .form button:hover {
+  background: rgb(88, 56, 250);
+} */
 
 footer {
   background-color: cadetblue;
